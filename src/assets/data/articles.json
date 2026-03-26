@@ -1,0 +1,64 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Understanding the difference between grid-template and grid-auto",
+      "text": "With all the new properties related to CSS Grid Layout, one of the distinctions that always confused me was the difference between the grid-template-* and grid-auto-* properties. Specifically the difference between grid-template-rows/columns and grid-auto-rows/columns. Although I knew they were different, I couldn't quite put my finger on the exact reason why they weren't simply unified under a single property."
+    },
+    {
+      "id": 2,
+      "title": "Recreating the GitHub Contribution Graph with CSS Grid Layout",
+      "text": "The GitHub contribution graph is a visual representation of a user's contributions to a repository over time. It's typically displayed as a grid of small squares where each square represents a day and the color intensity indicates the number of contributions on that day. This grid layout is perfect for demonstrating the power and flexibility of CSS Grid, which allows us to create complex layouts with minimal code."
+    },
+    {
+      "id": 3,
+      "title": "Mastering Flexbox: A Comprehensive Guide",
+      "text": "Flexbox is a powerful CSS layout mode that allows you to design flexible and efficient layouts with minimal code. It provides a more efficient way to arrange, distribute and align elements within a container, even when their size is unknown or dynamic. Flexbox makes it easy to create responsive designs that work seamlessly across different screen sizes and devices."
+    },
+    {
+      "id": 4,
+      "title": "Advanced CSS Selectors You Should Know",
+      "text": "CSS selectors are the foundation of styling web elements. While most developers are familiar with basic selectors like class, id, and element selectors, there are many advanced selectors that can make your CSS more powerful and efficient. These include attribute selectors, pseudo-classes, pseudo-elements, and combinators. Learning to use these selectors effectively can greatly improve your workflow and reduce code duplication."
+    },
+    {
+      "id": 5,
+      "title": "Introduction to CSS Variables",
+      "text": "CSS Variables, also known as CSS custom properties, are a powerful feature that allows you to store and reuse values throughout your stylesheets. They provide a convenient way to maintain consistency across your design, make global changes easily, and simplify your CSS code. With CSS variables, you can define a value once and use it in multiple places, making your stylesheets more maintainable and scalable."
+    },
+    {
+      "id": 6,
+      "title": "Building Responsive Layouts with CSS Media Queries",
+      "text": "Media queries are a fundamental tool for creating responsive web designs. They allow you to apply different CSS rules based on the characteristics of the device or browser viewing your content. By using media queries, you can optimize your layout, typography, and images for different screen sizes and devices, ensuring that your website provides an excellent user experience across all platforms."
+    },
+    {
+      "id": 7,
+      "title": "The Evolution of Web Design Standards",
+      "text": "Web design has evolved significantly over the past two decades. From simple static HTML pages to complex interactive applications, the standards and practices have continuously improved. Modern web design emphasizes user experience, accessibility, performance, and responsive design. Understanding the history and evolution of web design standards can help you make better decisions when building web applications and staying current with best practices."
+    },
+    {
+      "id": 8,
+      "title": "Optimizing Images for Web Performance",
+      "text": "Images are often the largest assets on a web page, and optimizing them is crucial for improving performance. There are several techniques for optimizing images including compression, responsive images with srcset, lazy loading, and using modern image formats like WebP. By implementing these optimization techniques, you can significantly reduce page load times and improve the overall user experience."
+    },
+    {
+      "id": 9,
+      "title": "Understanding Angular Change Detection Strategy",
+      "text": "Angular's change detection mechanism is responsible for determining when the view needs to be updated. By default, Angular uses Zone.js to detect changes and re-render components. However, you can optimize performance by using OnPush strategy, which limits change detection to specific events. Understanding how change detection works is crucial for building performant Angular applications."
+    },
+    {
+      "id": 10,
+      "title": "Creating Custom Angular Directives",
+      "text": "Angular directives are markers on a DOM element that tell Angular's compiler to attach a specified behavior to that element or even transform the DOM element and its children. There are three kinds of directives in Angular: components, structural directives, and attribute directives. Learning to create custom directives allows you to extend HTML functionality and create reusable, powerful components."
+    },
+    {
+      "id": 11,
+      "title": "Introduction to RxJS Observables",
+      "text": "RxJS is a library for reactive programming using observables, making it easier to compose asynchronous or callback-based code. Observables provide a powerful way to handle asynchronous data streams and events in a functional programming style. Understanding RxJS observables is essential for building modern Angular applications that handle complex data flows and user interactions efficiently."
+    },
+    {
+      "id": 12,
+      "title": "Advanced TypeScript Generics",
+      "text": "TypeScript generics provide a way to create reusable components that work with a variety of types while maintaining type safety. Generics allow you to write flexible and reusable code that works with multiple types without sacrificing type checking. By mastering generics, you can create powerful abstractions and utilities that make your code more maintainable and robust."
+    }
+  ]
+}
