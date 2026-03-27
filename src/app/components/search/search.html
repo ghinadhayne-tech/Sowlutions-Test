@@ -6,6 +6,7 @@
     (ngModelChange)="searchInput.set($event)"
     class="flex-1 px-3 py-2 pr-9 text-base border border-gray-300 rounded transition-colors focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
     aria-label="Search articles"
+    role="search"
   />
   @if (searchInput()) {
     <button
@@ -14,7 +15,7 @@
       aria-label="Clear search"
       type="button"
     >
-      ✕
+      ×
     </button>
   }
 </div>
@@ -24,10 +25,10 @@
     @for (article of filteredArticles(); track article.id) {
       <article class="border border-gray-200 rounded-lg p-4 bg-white shadow-sm">
         <h3 class="text-lg font-semibold text-gray-900 mb-2">
-          <span [innerHTML]="highlightText(article.title, searchInput())"></span>
+          <span [innerHTML]="article.title | highlight: searchInput()"></span>
         </h3>
         <p class="text-gray-700 leading-relaxed">
-          <span [innerHTML]="highlightText(article.text, searchInput())"></span>
+          <span [innerHTML]="article.text | highlight: searchInput()"></span>
         </p>
       </article>
     }

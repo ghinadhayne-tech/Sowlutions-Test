@@ -13,10 +13,11 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { debounceTime } from 'rxjs/operators';
 import { Article, ArticlesService } from '../../services/articles.service';
+import { HighlightPipe } from './highlight.pipe';
 
 @Component({
   selector: 'app-search',
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, HighlightPipe],
   templateUrl: './search.html',
   styleUrl: './search.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -54,13 +55,5 @@ export class SearchComponent implements OnInit {
 
   onResetSearch(): void {
     this.searchInput.set('');
-  }
-
-  highlightText(text: string, searchTerm: string): string {
-    const trimmed = searchTerm.trim();
-    if (!trimmed) return text;
-
-    const escaped = trimmed.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    return text.replace(new RegExp(`(${escaped})`, 'gi'), '<mark>$1</mark>');
   }
 }
